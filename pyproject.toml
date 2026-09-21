@@ -1,0 +1,19 @@
+[project]
+name = "adp-forecast"
+version = "0.1.0"
+description = "Forecast the next ADP National Employment Report"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "scikit-learn>=1.5",
+    "typer>=0.12",
+    "rich>=13.0",
+]
+
+[project.scripts]
+adp-forecast = "adp_forecast.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
